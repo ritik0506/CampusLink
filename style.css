@@ -1,0 +1,336 @@
+/* ===== Base Reset & Font ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #1f2937;
+  scroll-behavior: smooth;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a7f3d0;
+}
+
+.login-btn {
+  background-color: white;
+  color: #3b82f6;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #a7f3d0;
+  color: #1f2937;
+}
+
+/* ===== Section Containers ===== */
+section {
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  background-color: #eff6ff;
+  border-radius: 24px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #374151;
+}
+
+.hero button {
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #a7f3d0;
+  color: #1f2937;
+}
+
+/* ===== Headings ===== */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* ===== Features Grid ===== */
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #3b82f6;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* ===== About & Join Us ===== */
+.about-us p,
+.join-us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #374151;
+}
+
+.join-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.join-us li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.join-us button {
+  display: block;
+  margin: 1rem auto;
+  background-color: #6366f1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-us button:hover {
+  background-color: #3b82f6;
+}
+
+/* ===== How It Works ===== */
+#how-it-works ol {
+  padding-left: 1.5rem;
+  color: #374151;
+}
+
+#how-it-works li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* ===== Testimonials ===== */
+#testimonials .feature-card p {
+  font-style: italic;
+  color: #374151;
+}
+
+#testimonials .feature-card strong {
+  display: block;
+  margin-top: 0.5rem;
+  color: #6366f1;
+}
+
+/* ===== FAQ Section ===== */
+#faq ul {
+  padding-left: 1.5rem;
+}
+
+#faq li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #a7f3d0;
+}
+
+.footer-column a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #fda4af;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: #e0e7ff;
+}
+/* ===== Curved Containers ===== */
+.hero,
+#features,
+.join-us,
+#testimonials {
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Flat Containers ===== */
+.about-us,
+#how-it-works,
+#faq,
+footer {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+/* ===== Flat Sections with Subtle Highlight ===== */
+.about-us,
+#how-it-works,
+#faq {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Optional Left Accent Bar */
+.about-us::before,
+#how-it-works::before,
+#faq::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  width: 6px;
+  height: calc(100% - 3rem);
+  background-color: #3b82f6;
+  border-radius: 4px;
+}
+
+/* Section Headings */
+.about-us h2,
+#how-it-works h2,
+#faq h2 {
+  color: #1f2937;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* FAQ List Styling */
+#faq ul {
+  padding-left: 1.5rem;
+}
+
+#faq li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #374151;
+  position: relative;
+}
+
+#faq li::marker {
+  color: #3b82f6;
+}
